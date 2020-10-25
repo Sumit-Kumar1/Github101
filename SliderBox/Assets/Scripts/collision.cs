@@ -11,7 +11,7 @@ public class collision : MonoBehaviour
         {
             print("we hit an obstacle");
             MovementScript.enabled = false;
-            rb.constraints = RigidbodyConstraints.FreezePosition;
+            rb.constraints = RigidbodyConstraints.FreezePosition; // rb is rigid body and we access freeze position constraints using rigid body constraints
         }
     }
 }
