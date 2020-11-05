@@ -15,6 +15,6 @@ public class movement : MonoBehaviour
 		if (Input.GetKey("d")||Input.GetKey(KeyCode.RightArrow))
         {
 			rb.AddForce(-forceSideway * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-        }	
+        }
 	}
 }
