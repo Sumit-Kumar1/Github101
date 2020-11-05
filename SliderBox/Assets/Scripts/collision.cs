@@ -3,8 +3,11 @@
 public class collision : MonoBehaviour
 {
     public movement MovementScript;
-    public Rigidbody rb;
-
+    private Rigidbody rb;
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     void OnCollisionEnter(Collision collisionInfo)
     {
         if(collisionInfo.collider.tag == "Obstacle")
