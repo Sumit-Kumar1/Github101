@@ -4,6 +4,7 @@ public class collision : MonoBehaviour
 {
     public movement MovementScript;
     private Rigidbody rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -14,7 +15,8 @@ public class collision : MonoBehaviour
         {
             print("we hit an obstacle");
             MovementScript.enabled = false;
-            rb.constraints = RigidbodyConstraints.FreezePosition; // rb is rigid body and we access freeze position constraints using rigid body constraints
+            //rb.constraints = RigidbodyConstraints.FreezePosition; // rb is rigid body and we access freeze position constraints using rigid body constraints
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
