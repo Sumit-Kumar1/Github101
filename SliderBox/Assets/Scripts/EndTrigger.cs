@@ -5,6 +5,6 @@ public class EndTrigger : MonoBehaviour
     public GameManager gameManager;
 
    void OnTriggerEnter(Collider other) {
-       
+       print("Game Ended.");
    }
 }
