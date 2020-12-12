@@ -20,6 +20,7 @@ public class collision : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame(); //ends game if collision detected
         }
     }
+
     //end game if the y position goes below -1 value.
     void FixedUpdate()
     {

@@ -3,8 +3,11 @@
 public class EndTrigger : MonoBehaviour
 {
     public GameManager gameManager;
-
-   void OnTriggerEnter(Collider other) {
-       print("Game Ended.");
-   }
+    public Rigidbody player;
+    private void OnTriggerEnter()
+    {
+        gameManager.CompleteLevel();
+        gameManager.flag = false;
+        player.constraints = RigidbodyConstraints.FreezePosition;
+    }
 }
