@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 49848975}
   - component: {fileID: 49848974}
   m_Layer: 5
-  m_Name: TextPanel
+  m_Name: Game Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,10 +767,10 @@ RectTransform:
   m_Father: {fileID: 1562003811}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.27012384, y: 0.16666667}
-  m_AnchorMax: {x: 0.7372477, y: 0.5733334}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.33800003, y: 0.24983338}
+  m_AnchorMax: {x: 0.68600005, y: 0.51960427}
+  m_AnchoredPosition: {x: 4.5, y: 0}
+  m_SizeDelta: {x: -6, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &663154423
 MonoBehaviour:
@@ -785,18 +785,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 10
+    m_Right: 10
     m_Top: 10
     m_Bottom: 10
   m_ChildAlignment: 4
-  m_Spacing: 25
+  m_Spacing: 15
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 1
+  m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
 --- !u!114 &663154424
 MonoBehaviour:
@@ -1416,8 +1416,8 @@ RectTransform:
   m_Father: {fileID: 49848973}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.18100001, y: 0.54333335}
-  m_AnchorMax: {x: 0.81700003, y: 0.91333336}
+  m_AnchorMin: {x: 0, y: 0.5224896}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1443,13 +1443,13 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e7c875f85c1012e458209363f59b9532, type: 3}
-    m_FontSize: 44
+    m_FontSize: 136
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 0
     m_MaxSize: 200
     m_Alignment: 4
-    m_AlignByGeometry: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0

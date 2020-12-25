@@ -12,8 +12,11 @@ public class GameManager : MonoBehaviour
     public movement mvm;
     public bool flag = true;
     public AudioSource BGM;
+    public GameObject GamePanel;
 
     public void Start() {
+        completeLevelUI.SetActive(false);
+        GamePanel.SetActive(true);
         IsGameEnded = false;
         player.SetActive(false);
         mvm.enabled = false;
