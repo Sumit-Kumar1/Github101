@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool flag = true;
     public AudioSource BGM;
     public GameObject GamePanel;
+    public CPUPLAYERSCRIPT cpuPlay;
 
     public void Start() {
         completeLevelUI.SetActive(false);
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
         IsGameEnded = false;
         player.SetActive(false);
         mvm.enabled = false;
+        cpuPlay.enabled = false;
     }
 
     public void CompleteLevel()
@@ -38,6 +40,7 @@ public class GameManager : MonoBehaviour
     {   BGM.Play();
         player.SetActive(true);
         mvm.enabled = true;
+        cpuPlay.enabled = true;
     }
 
     public void EndGame()
