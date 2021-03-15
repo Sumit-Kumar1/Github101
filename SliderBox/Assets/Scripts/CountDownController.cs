@@ -12,7 +12,6 @@ public class CountDownController : MonoBehaviour
     {
         StartCoroutine(CountDownStart());
     }
-
     IEnumerator CountDownStart()
     {
         

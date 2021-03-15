@@ -1,11 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Threading;
+using System.Net.Mime;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
 {
     bool IsGameEnded = false;
-    public float restartDelay = 2f;
+    [SerializeField] float restartDelay = 2f;
     public GameObject completeLevelUI;
     public GameObject player;
     public GameObject InfoPanel;
@@ -13,15 +16,14 @@ public class GameManager : MonoBehaviour
     public bool flag = true;
     public AudioSource BGM;
     public GameObject GamePanel;
-    public CPUPLAYERSCRIPT cpuPlay;
+    public CPUPLAYERSCRIPT _AIPlayer;
 
     public void Start() {
         completeLevelUI.SetActive(false);
         GamePanel.SetActive(true);
         IsGameEnded = false;
         player.SetActive(false);
-        mvm.enabled = false;
-        cpuPlay.enabled = false;
+        _AIPlayer.enabled = false;
     }
 
     public void CompleteLevel()
@@ -39,8 +41,8 @@ public class GameManager : MonoBehaviour
     public void BeginGame()
     {   BGM.Play();
         player.SetActive(true);
-        mvm.enabled = true;
-        cpuPlay.enabled = true;
+        //mvm.enabled = true;
+        _AIPlayer.enabled = true;
     }
 
     public void EndGame()
@@ -49,6 +51,7 @@ public class GameManager : MonoBehaviour
         {
             BGM.Stop();
             print("Game Ended");
+
             IsGameEnded = true;
             if(flag)
                 Invoke("Restart", restartDelay);
