@@ -38,10 +38,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
-    public void BeginGame()
+    public void BeginGame() // will do this after countdown timer done
     {   BGM.Play();
         player.SetActive(true);
-        //mvm.enabled = true;
         _AIPlayer.enabled = true;
     }
 

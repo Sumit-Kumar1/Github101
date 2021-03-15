@@ -28,6 +28,7 @@ public class collision : MonoBehaviour
         if(rb.position.y < -1f)
         {
             FindObjectOfType<GameManager>().EndGame();
+            MovementScript.enabled = false;
         }
     }
 }

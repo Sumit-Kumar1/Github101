@@ -3,22 +3,19 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    public Transform player;
-    public Text scoreText; // The text is from unity engine.ui
-    float s = 0.0f;
-    float _finalScore = 0.0f;
-    bool flag = true;
-    
+    [SerializeField] Transform player;
+    [SerializeField] Text scoreText; // The text is from unity engine.ui
+    private float _score = 0.0f;
+    private float _finalScore = 0.0f;
+    [SerializeField] movement _playerMovement;
+
     void FixedUpdate()
     {
-        s = -player.position.z;
-        
-        if(player.movement == enabled){
-            scoreText.text = s.ToString("0");
-            s = _finalScore;
-        }
-        else
-        {
+        _score = -player.position.z;
+        if(_playerMovement.enabled){
+            scoreText.text = _score.ToString("0");
+            _finalScore = _score;
+        }else{
             scoreText.text = _finalScore.ToString("0");
         }
     }
