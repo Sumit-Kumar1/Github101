@@ -16,14 +16,12 @@ public class GameManager : MonoBehaviour
     public bool flag = true;
     public AudioSource BGM;
     public GameObject GamePanel;
-    public CPUPLAYERSCRIPT _AIPlayer;
 
     public void Start() {
         completeLevelUI.SetActive(false);
         GamePanel.SetActive(true);
         IsGameEnded = false;
         player.SetActive(false);
-        _AIPlayer.enabled = false;
     }
 
     public void CompleteLevel()
@@ -41,7 +39,6 @@ public class GameManager : MonoBehaviour
     public void BeginGame() // will do this after countdown timer done
     {   BGM.Play();
         player.SetActive(true);
-        _AIPlayer.enabled = true;
     }
 
     public void EndGame()

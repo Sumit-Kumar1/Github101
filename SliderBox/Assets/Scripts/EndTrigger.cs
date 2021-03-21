@@ -2,8 +2,8 @@
 
 public class EndTrigger : MonoBehaviour
 {
-    public GameManager gameManager;
-    public Rigidbody player;
+    [SerializeField] GameManager gameManager;
+    [SerializeField] Rigidbody player;
     private void OnTriggerEnter()
     {
         gameManager.CompleteLevel();

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7934108765637987261
+--- !u!114 &-1902039194474766986
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18,14 +18,14 @@ MonoBehaviour:
     value: 1
   gradingMode:
     overrideState: 1
-    value: 1
+    value: 0
   externalLut:
     overrideState: 0
     value: {fileID: 0}
     defaultState: 1
   tonemapper:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0
   toneCurveToeStrength:
     overrideState: 0
     value: 0
@@ -49,32 +49,32 @@ MonoBehaviour:
     value: {fileID: 0}
     defaultState: 4
   ldrLutContribution:
-    overrideState: 0
+    overrideState: 1
     value: 1
   temperature:
     overrideState: 1
-    value: -22
+    value: -26
   tint:
     overrideState: 1
-    value: 15
+    value: -16
   colorFilter:
-    overrideState: 0
+    overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -3
   saturation:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 5
   brightness:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 14
   postExposure:
     overrideState: 0
     value: 0
   contrast:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -2
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -104,7 +104,7 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 0
-    value: {x: 0.95076454, y: 1, z: 0.853883, w: 0}
+    value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
@@ -1311,7 +1311,7 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
---- !u!114 &-6083019832793592005
+--- !u!114 &-809243501522651490
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1332,19 +1332,19 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0.16981131, g: 0.15443218, b: 0.15443218, a: 1}
   center:
     overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.206
+    value: 0.386
   smoothness:
     overrideState: 1
-    value: 0.336
+    value: 0.2
   roundness:
     overrideState: 1
-    value: 0.899
+    value: 1
   rounded:
     overrideState: 1
     value: 1
@@ -1368,58 +1368,10 @@ MonoBehaviour:
   m_Name: PostProcLayer Profile
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: 933090233117847495}
-  - {fileID: 2689196685313713744}
-  - {fileID: -6083019832793592005}
-  - {fileID: -7934108765637987261}
---- !u!114 &933090233117847495
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
-  m_Name: Bloom
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 3
-  threshold:
-    overrideState: 1
-    value: 2.73
-  softKnee:
-    overrideState: 1
-    value: 0.5
-  clamp:
-    overrideState: 1
-    value: 65472
-  diffusion:
-    overrideState: 1
-    value: 7.31
-  anamorphicRatio:
-    overrideState: 1
-    value: 0
-  color:
-    overrideState: 1
-    value: {r: 0.011764706, g: 0.019607844, b: 0.17843138, a: 1}
-  fastMode:
-    overrideState: 1
-    value: 1
-  dirtTexture:
-    overrideState: 0
-    value: {fileID: 0}
-    defaultState: 1
-  dirtIntensity:
-    overrideState: 0
-    value: 0
---- !u!114 &2689196685313713744
+  - {fileID: -1902039194474766986}
+  - {fileID: 2279668799372055486}
+  - {fileID: -809243501522651490}
+--- !u!114 &2279668799372055486
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1437,7 +1389,7 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 250
+    value: 270
   sampleCount:
     overrideState: 1
     value: 10

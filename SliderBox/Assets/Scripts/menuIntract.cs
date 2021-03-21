@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class menuIntract : MonoBehaviour
 {
-    public AudioSource source;
+    [SerializeField] AudioSource source;
     public void StartGame()
     {
         source.Play();
