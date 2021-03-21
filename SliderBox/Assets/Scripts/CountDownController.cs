@@ -1,11 +1,14 @@
-﻿using System.Collections;
+﻿using System.Runtime.CompilerServices;
+using System;
+using System.Globalization;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CountDownController : MonoBehaviour
 {
-    public int countdownTime = 3;
-    public Text CountDownText;
+    [SerializeField] int countdownTime = 3;
+    [SerializeField] Text CountDownText;
     public GameManager gm;
     public AudioSource countdown;
     void Start()
