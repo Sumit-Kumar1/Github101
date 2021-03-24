@@ -17,7 +17,6 @@ public class collision : MonoBehaviour
         if(collisionInfo.collider.tag == "Obstacle")
         {
             // print("we hit an obstacle");
-
             MovementScript.enabled = false;
             //rb.constraints = RigidbodyConstraints.FreezePosition; // rb is rigid body and we access freeze position constraints using rigid body constraints
             FindObjectOfType<GameManager>().EndGame(); //ends game if collision detected
