@@ -4,7 +4,6 @@ public class movement : MonoBehaviour
 {
 	public Rigidbody rb;
 	public float forceforward = 800f, forceSideway = 350f;
-
 	void FixedUpdate()
 	{
 		rb.AddForce(0, 0, -forceforward * Time.deltaTime);

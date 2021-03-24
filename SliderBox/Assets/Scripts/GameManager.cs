@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading;
-using System.Net.Mime;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
@@ -16,8 +13,10 @@ public class GameManager : MonoBehaviour
     public bool flag = true;
     public AudioSource BGM;
     public GameObject GamePanel;
-
+    ParticleSystem part;
     public void Start() {
+        part = FindObjectOfType<ParticleSystem>();
+        part.Stop();
         completeLevelUI.SetActive(false);
         GamePanel.SetActive(true);
         IsGameEnded = false;
@@ -37,7 +36,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
     public void BeginGame() // will do this after countdown timer done
-    {   BGM.Play();
+    {
+        part.Play();
+        BGM.Play();
         player.SetActive(true);
     }
 
