@@ -4,7 +4,7 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
     [SerializeField] Transform player;
-    [SerializeField] Text scoreText; // The text is from unity engine.ui
+    [SerializeField] Text scoreText ; // The text is from unity engine.ui
     private float _score = 0.0f;
     private float _finalScore = 0.0f;
     [SerializeField] movement _playerMovement;
