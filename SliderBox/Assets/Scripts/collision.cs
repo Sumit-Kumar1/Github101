@@ -5,7 +5,6 @@ public class collision : MonoBehaviour
 {
     public movement MovementScript;
     private Rigidbody rb;
-    [SerializeField] AudioSource _collidesound; 
 
     void Start()
     {
