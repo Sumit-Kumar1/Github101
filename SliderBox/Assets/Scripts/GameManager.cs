@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    bool IsGameEnded = false;
+    private bool IsGameEnded = false;
     [SerializeField] float restartDelay = 2f;
     public GameObject completeLevelUI;
     public GameObject player;
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
             IsGameEnded = true;
             if(flag)
-                Invoke("Restart", restartDelay);
+              Invoke("Restart", restartDelay);
         }
     }
     void Restart()
